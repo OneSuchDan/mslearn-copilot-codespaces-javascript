@@ -123,3 +123,115 @@ img.socialIcon {
   height: 30px;
   width: 30px;
 }
+/* add an amazing animation to the social icons */
+
+img.socialIcon:hover {
+  animation: bounce 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+img.logo {
+  height: 50px;
+  margin: 0 1rem;
+  width: auto;
+}
+
+img.logo:hover {
+  animation: spin 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+div#footer {
+  background-color: #4e567e;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+div#footer a {
+  color: white;
+  text-decoration: none;
+}
+
+div#footer a:hover {
+  color: #e8e8e8;
+}
+
+div#footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+div#footer div div {
+  display: flex;
+  flex-direction: column;
+}
+
+div#footer div div h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+div#footer div div p {
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+div#footer div div a {
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+div#footer div div a:hover {
+  color: #e8e8e8;
+}
+
+div#footer div div ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+div#footer div div ul li {
+  margin: 0;
+  padding: 0;
+}
+
+div#footer div div ul li a {
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+div#footer div div ul li a:hover {
+  color: #e8e8e8;
+}
+
+div#footer div div ul li img {
+  height: 20px;
+  margin-right: 0.5rem;
+  width: 20px;
+}
+
+div#footer div div ul li img:hover { 
+  animation: bounce 0.5s ease-in-out infinite alternate;
+}
